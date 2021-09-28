@@ -46,17 +46,3 @@ Scenarios: Delete an existing user
    When a DELETE request is sent to https://fakerestapi.azurewebsites.net/api/v1/Users/{id}
    Then it returns a 204 for a successful request
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
