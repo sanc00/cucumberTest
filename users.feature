@@ -31,3 +31,32 @@ Scenarios: Create a new user
    Then the request sends a password
    And it returns a 201 for a successful request
    
+@HappyPath
+Scenarios: Update data to an existing user
+  Given an endpoint exists to update data to a user
+  When a PUT request is sent to https://fakerestapi.azurewebsites.net/api/v1/Users/{id}
+  Then the request sends an id
+  Then the request sends a userName
+  Then the request sends a password
+  And it returns a 204 for a successful request
+  
+@HappyPath
+Scenarios: Delete an existing user 
+   Given an endpoint exists to delete data to a user
+   When a DELETE request is sent to https://fakerestapi.azurewebsites.net/api/v1/Users/{id}
+   Then it returns a 204 for a successful request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
